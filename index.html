@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css?180323">
+    <script src="script.js?170323"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content="Chat da clínica Dr. Henrique Canto">
+    <meta property="og:title" content="Tira Dúvidas" />
+    <meta property="og:description"
+        content="Dúvidas de atendimento, horários, procedimentos e agendamento clínico e cirurgico" />
+    <meta property="og:type" content="website" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/jpeg">
+
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:updated_time" content="1440432931" />
+
+    <title>Chat da clínica Dr. Henrique Canto</title>
+</head>
+
+<body onload="startFunction()">
+
+    <nav>
+
+        <div class="navbar">
+            <img class="dpimg" src="images/photo_bot.png" alt="">
+            <div class="personalInfo">
+                <label id="name">Atendimento Digital</label>
+                <label id="lastseen">Última visualização hoje às 3:04 pm</label>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <div class="scrollable" id="myScrollable">
+
+        
+
+        <div id="chatting" class="chatting">
+            <ul id="listUL">
+            </ul>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="sendBar">
+            <input id="inputMSG" onkeypress="isEnter(event)" type="text" placeholder="Type a message" autofocus>
+            <svg onclick="sendMsg()" viewBox="0 0 24 24" width="24" height="24" class="">
+                <path fill="currentColor"
+                    d="M1.101 21.757 23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z"></path>
+            </svg>
+        </div>
+    </footer>
+
+</body>
+
+</html>
